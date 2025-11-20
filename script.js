@@ -18,7 +18,7 @@ const bingoItems = [
     '"L\'islam a libéré les esclaves progressivement"',
     "Il faut voir l'ensemble du coran, pas un verset isolé",
     '"Le coran est parfait"',
-    "Demande l'origine et la religion avant de répondre à une question",
+    "Demande l'origine et la religion avant de répondre a une question",
     "Consultez un vrai érudit musulman",
     '"C\'est une religion de paix"',
     "Vous insultez les musulmans",
