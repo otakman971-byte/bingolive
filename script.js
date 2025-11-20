@@ -7,7 +7,7 @@ const bingoItems = [
     '"L\'esclavage n\'existe plus en 2025"',
     " Vous êtes d'extrême droite !",
     "Se faire insulter",
-    '"Une femme de 9ans..."',
+    '"Une femme de 6/7/8/9/10ans..."',
     '"Des règles strictes empêchent les abus"',
     "Les femmes sont libre / sont un bijoux",
     '"Rien dans le Coran n\’encourage la haine gratuite"',
