@@ -24,7 +24,7 @@ const bingoItems = [
     "C\'est de la propagande sioniste",
     "Aicha n'avait pas 9ans...",
     '"Dissonance"',
-    "Zuturaluk intervient"
+    "Si c'est écrit dans le coran, c'est vrai"
 ];
 
 // Fonction pour mélanger un tableau
