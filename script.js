@@ -17,7 +17,7 @@ const bingoItems = [
     "Il faut étudier des années pour comprendre",
     '"L\'islam a libéré les esclaves progressivement"',
     "Il faut voir l'ensemble du coran, pas un verset isolé",
-    '"Les médias déforment la réalité"',
+    '"Le coran est parfait"',
     "C\'est symbolique / métaphorique",
     "Consultez un vrai érudit musulman",
     '"C\'est une religion de paix"',
