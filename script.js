@@ -21,7 +21,7 @@ const bingoItems = [
     "C\'est symbolique / métaphorique",
     "Consultez un vrai érudit musulman",
     '"C\'est une religion de paix"',
-    "C\'est de la propagande sioniste",
+    "Vous insultez les musulmans",
     "Aicha n'avait pas 9ans...",
     '"Dissonance"',
     "Si c'est écrit dans le coran, c'est vrai"
