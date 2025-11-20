@@ -2,7 +2,7 @@
 const bingoItems = [
     "Il faut comprendre le contexte historique",
     "Frapper ne signifie pas frapper, c'est une mauvaise traduction",
-    '" C\'est sorti de son contexte"',
+    '"C\'est sorti de son contexte"',
     "Les châtiments coraniques sont rarement appliqués",
     '"L\'esclavage n\'existe plus en 2025"',
     " Vous êtes d'extrême droite !",
