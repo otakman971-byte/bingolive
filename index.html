@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Live for Zutualuk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 BINGO LIVE FOR ZUTUALUK</h1>
+        <p class="subtitle">Coche les cases au fur et à mesure du live !</p>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">0%</div>
+        </div>
+        
+        <div class="bingo-grid" id="bingoGrid"></div>
+        
+        <div class="button-container">
+            <button class="action-btn reset-btn" onclick="resetBingo()">🔄 Réinitialiser</button>
+            <button class="action-btn download-btn" onclick="downloadBingo()">📥 Télécharger</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

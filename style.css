@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 20px 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    max-width: 710px;
+    width: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 0.85em;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 22px;
+    background: #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    width: 0%;
+    transition: width 0.5s ease, background 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75em;
+}
+
+.progress-fill.complete {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    animation: pulse 1s ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+.progress-text {
+    font-weight: bold;
+    color: #667eea;
+    font-size: 0.95em;
+    min-width: 42px;
+    text-align: center;
+}
+
+.bingo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-bottom: 8px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bingo-cell {
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 6px;
+    text-align: center;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 1.1;
+    max-height: 110px;
+}
+
+.bingo-cell:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.bingo-cell.checked {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    transform: scale(0.95);
+}
+
+.bingo-cell.checked::after {
+    content: '✓';
+    font-size: 2em;
+    position: absolute;
+}
+
+.bingo-cell.free {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    font-size: 1em;
+}
+
+.button-container {
+.button-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.95em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+.reset-btn {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.download-btn {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+        max-width: 600px;
+    }
+    
+    h1 {
+        font-size: 1.7em;
+    }
+    
+    .bingo-cell {
+        font-size: 0.7em;
+        padding: 8px;
+    }
+    
+    .bingo-grid {
+        gap: 8px;
+    }
+    
+    .action-btn {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.3em;
+        margin-bottom: 8px;
+    }
+    
+    .subtitle {
+        font-size: 0.85em;
+        margin-bottom: 15px;
+    }
+    
+    .progress-container {
+        margin-bottom: 15px;
+        gap: 8px;
+    }
+    
+    .progress-bar {
+        height: 25px;
+    }
+    
+    .progress-text {
+        font-size: 0.95em;
+        min-width: 45px;
+    }
+    
+    .bingo-cell {
+        font-size: 0.6em;
+        padding: 6px;
+        border-radius: 8px;
+    }
+    
+    .bingo-grid {
+        gap: 6px;
+        margin-bottom: 15px;
+    }
+    
+    .button-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .action-btn {
+        font-size: 0.95em;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        padding: 12px;
+    }
+    
+    h1 {
+        font-size: 1.1em;
+    }
+    
+    .bingo-cell {
+        font-size: 0.55em;
+        padding: 4px;
+    }
+    
+    .bingo-grid {
+        gap: 4px;
+    }
+}
